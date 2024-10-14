@@ -72,6 +72,7 @@ ul{
     display: flex;
     text-align: center;
     gap: 1rem;
+    z-index: 9;
 }
 
 ul li a {
@@ -86,3 +87,130 @@ ul li a:hover{
     text-decoration: underline;
     color: var(--colorDos);
 }
+
+/* Styles for main */
+main {
+    background-color: var(--colorTres);
+}
+
+.hero__text{
+    text-align: center;
+    font-size: 18px;
+    color: var(--colorUno);
+    padding: 1rem 0;
+    /*border: 1px solid red*/
+}
+
+.hero__title--primary{
+    color: var(--colorDos);
+    text-transform: uppercase;
+}
+
+.hero__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero__buttons--primary,
+.hero__buttons--secondary{
+    text-decoration: none;
+    border: 2px solid var(--colorDos);
+}
+
+@media(width >= 768px){
+    .hero{
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        align-items: center;
+        height: 35rem;
+        margin-top: 1rem;
+    }
+    .hero__text{
+        margin: 0;
+    }
+    .hero__title{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    .hero__img{
+        width: 40%;
+    }
+}
+
+/* Styles for section */
+
+.mobile{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mobile__description{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mobile__buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.mobile__buttons:hover{
+    cursor: pointer;
+}
+
+@media(width >= 768px){
+    .container__app{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .mobile__title{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    .mobile__description{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .mobile{
+        order: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /*border: solid red;*/
+        max-width: 45rem;
+        margin: 0;
+    }
+}
+
+/* Styles for footer */
+.footer{
+    background-color: var(--colorTres);
+    color: var(--colorUno);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+@media(width >= 768px){
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
